@@ -1,0 +1,112 @@
+body {
+    font-family:  Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  h1 span {
+    color: #4caf50;
+  }
+  
+  h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #4caf50;
+    margin: 10px auto;
+  }
+  
+  .board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #table1 {
+    border-collapse: collapse;
+  }
+  
+  #table1 td {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    border: 5px solid #030303;
+    transition: background-color 0.3s ease;
+  }
+  
+  #table1 tr:not(:last-child) td {
+    border-bottom: none;
+  }
+  
+  #table1 td:not(:last-child) {
+    border-right: none;
+  }
+  
+  #table1 td:hover {
+    background-color: #f9f9f9;
+  }
+  
+
+  #table1 button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #table1 button.x {
+    color: #d32f2f;
+  }
+  
+  #table1 button.o {
+    color: #1976d2;
+  }
+
+  button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  
+  button:focus {
+    outline: none;
+  }
